@@ -11,11 +11,13 @@ import { AlertService } from './shared/alert.service';
 import { MenuComponent } from './core/menu/menu.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AlertComponent,
     MenuComponent,
+    ...AppRoutingModule.routTableComponent,
     PageNotFoundComponent
   ],
   imports: [
