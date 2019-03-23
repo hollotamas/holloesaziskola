@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', component: AppComponent },
   //{path: '', redirectTo: '/tartalom', pathMatch: 'full' },
+  //{path: '', component: AppComponent },
   {path: '**', component: PageNotFoundComponent}
 ];
 
