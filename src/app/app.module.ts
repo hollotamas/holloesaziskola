@@ -24,7 +24,6 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
     LablecComponent,
     ...AppRoutingModule.routTableComponent,
     PageNotFoundComponent
-
   ],
   imports: [
     BrowserModule,
