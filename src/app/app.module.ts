@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { AlertComponent } from './core/alert/alert.component';
-import { AlertService } from './shared/alert.service';
 import { MenuComponent } from './core/menu/menu.component';
 import { FejlecComponent } from './core/fejlec/fejlec.component';
 import { LablecComponent } from './core/lablec/lablec.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+
+import { AlertService } from './shared/alert.service';
+import { UserService } from './shared/user.service';
 
 
 
@@ -32,7 +34,8 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
     AppRoutingModule
   ],
   providers: [
-    AlertService
+    AlertService,
+    UserService,
   ],
   bootstrap: [AppComponent]
 })
