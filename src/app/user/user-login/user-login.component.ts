@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertService } from '../../shared/alert.service';
 
 @Component({
   selector: 'app-user-login',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _alert: AlertService ) { }
 
   ngOnInit() {
+    this._alert.success("Login");
   }
 
 }

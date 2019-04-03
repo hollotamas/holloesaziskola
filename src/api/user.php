@@ -1,12 +1,17 @@
 <?php
 require("connect.php");
 
-
-echo "<h5>Helló worldecske!!!</h5>";
-if(defined("CRYPT_BLOWFISH") && CRYPT_BLOWFISH) {
-  echo "CRYPT_BLOWFISH is enabled!";
+$email = "";
+$pass = "";
+if (!empty($_REQUEST['email'])) {
+  if (filter_var($_REQUEST['email'], FILTER_VALIDATE_EMAIL)) {
+    $email = $_REQUEST['email'];
+  }
 } else {
-  echo "CRYPT_BLOWFISH is NOT enabled!";
+  echo "Nincs email";
+}
+if (!empty($_REQUEST['pass'])) {
+  $pass = $_REQUEST['pass'];
 }
 
 function encrypt($input, $rounds = 10) {
@@ -28,13 +33,13 @@ function encrypt($input, $rounds = 10) {
 // }
 
 $sql = "SELECT password FROM user
-        WHERE email='hollotomi@gmail.com'";
+        WHERE email='$email'";
 
 $result = $link->query($sql);
 $pass = $result->fetch_assoc();
 print_r($pass);
 
-if (password_verify('Aniko822', $pass['password'])) {
+if (password_verify('Aniko823', $pass['password'])) {
   echo "<br />OK";
 } else {
   echo "<br />False";
