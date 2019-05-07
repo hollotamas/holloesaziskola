@@ -24,10 +24,11 @@
     "ajv": "^6.10.0",
     "ajv-keywords": "^3.4.0",
     "bootstrap": "^4.3.1",
-    "core-js": "^3.0.1",
+    "core-js": "^2.5.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "ngx-bootstrap": "^4.1.1",
+    "polyfills": "^2.1.1",
     "popper.js": "^1.15.0",
     "rxjs": "~6.5.1",
     "rxjs-compat": "^6.5.1",
@@ -35,7 +36,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.8",
+    "@angular-devkit/build-angular": "^0.13.9",
     "@angular/cli": "~7.3.8",
     "@angular/compiler-cli": "~7.2.14",
     "@angular/language-service": "~7.2.14",
@@ -54,6 +55,6 @@
     "protractor": "~5.4.2",
     "ts-node": "~8.1.0",
     "tslint": "~5.16.0",
-    "typescript": "~3.4.5"
+    "typescript": "3.1.6"
   }
 }
